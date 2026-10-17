@@ -20,7 +20,7 @@
     factory(require) {
       var __tbSelfBundle = Object.freeze({
         url: loadedScriptUrl,
-        sourceDigest: "41a0a87dfb32406e3269d7deaa25f623246e747bbbf627408645bda0887fb257"
+        sourceDigest: "82ffde859be3746f62b2f1e71c0db8fc18845fc466a3a8739bdb43d59356e977"
       });
       const React = require('react');
 
@@ -465,6 +465,7 @@ function tbCreateFocusBridge(options) {
     }
   };
 }
+
 /* ==== src/client/00-helpers.js ==== */
 /* @local/dsh-team-workbench — client helpers, theme-token style sheet, tiny store engine.
  *
