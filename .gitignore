@@ -1,0 +1,16 @@
+node_modules/
+.runtime/
+.acceptance/
+.verify-data/
+tests/tmp/
+out/
+dist/
+coverage/
+*.log
+*.tgz
+*.zip
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

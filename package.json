@@ -1,0 +1,71 @@
+{
+  "name": "@local/dsh-team-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 超级工作台：1/2/4 窗并行会话、成员自主规划与派发、事件驱动滚动补位的智能体团队。",
+  "license": "MIT",
+  "author": "DSH Team Workbench contributors",
+  "homepage": "https://github.com/CH3SH-LC/dsh-team-workbench#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CH3SH-LC/dsh-team-workbench.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CH3SH-LC/dsh-team-workbench/issues"
+  },
+  "keywords": ["deepseek-harness", "dsh-plugin", "agent-team", "multi-agent", "workbench"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node tools/build-client.mjs --check",
+    "test": "node tools/verify.mjs",
+    "check:package": "node tools/check-package.mjs",
+    "baseline:update": "node tests/client/update-artifact-baseline.mjs"
+  },
+  "icon": "./icon.svg",
+  "meta": {
+    "title": "超级工作台",
+    "description": "1／2／4 窗真实会话并行，加一支会自动补位的模块化智能体团队：每格独立阅读、草稿、发送与停止，团队由常驻 Host 调度器驱动。"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./upgrade-entry": "./src/host/upgradeEntry.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "src/host",
+    "src/client",
+    "src/compat",
+    "locale",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "docs",
+    "tools/build-client.mjs",
+    "scripts/install-upgrade-entry.mjs"
+  ]
+}

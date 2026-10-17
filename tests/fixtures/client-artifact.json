@@ -1,0 +1,20 @@
+{
+  "artifact": "client.js",
+  "sha256": "F0F90F24208DD67676ABCCF76B6BF0C801A596324C91C910E290F46D05ABAF3A",
+  "bytes": 339291,
+  "capturedAt": "2026-10-17T15:03:01.632Z",
+  "builder": "tools/build-client.mjs",
+  "source": "src/client/** + src/compat/**",
+  "rebuildHint": "node tools/build-client.mjs",
+  "baselinePolicy": "strict",
+  "baselinePolicyReason": "Initial standalone public release; client changes require an explicit rebuilt baseline.",
+  "note": "client.js 是构建产物。哈希不一致说明产物与基线漂移：先跑 node tools/build-client.mjs 重建，再把新的 sha256/bytes 写回本文件（并说明为什么变了）。",
+  "history": [
+    {
+      "sha256": "118AAA73ADB41C9A3A8609C380AC07D606E4743A360BD64E44D16950FDA065FA",
+      "bytes": 339322,
+      "at": "2026-10-17T14:38:00.000Z",
+      "replacedAt": "2026-10-17T15:03:01.629Z"
+    }
+  ]
+}

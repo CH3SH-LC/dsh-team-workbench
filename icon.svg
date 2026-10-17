@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="DSH Team Workbench">
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="#247bbf" />
+  <rect x="10" y="12" width="20" height="16" rx="3" fill="#ffffff" opacity="0.95" />
+  <rect x="34" y="12" width="20" height="16" rx="3" fill="#ffffff" opacity="0.7" />
+  <rect x="10" y="32" width="20" height="16" rx="3" fill="#ffffff" opacity="0.7" />
+  <rect x="34" y="32" width="20" height="16" rx="3" fill="#ffffff" opacity="0.95" />
+  <path d="M32 20 v24" stroke="#0b3d63" stroke-width="1.5" stroke-dasharray="3 3" />
+  <path d="M20 28 h24" stroke="#0b3d63" stroke-width="1.5" stroke-dasharray="3 3" />
+</svg>
